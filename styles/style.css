@@ -275,19 +275,44 @@ span {
 }
 
 .using_card {
-    max-width: 270px;
-    width: 100%;
+    width: 270px;
     height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--gray-bg-color);
+    border-radius: 8px;
+    position: relative;
+}
+
+.front,
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s linear;
     border-radius: 8px;
 }
 
-.using_card:hover {
-    background: var(--hover-using-color);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    transform: rotate3d(1, 1, 1, 30deg);
+.front {
+    background: var(--gray-bg-color);
+    transform: perspective(600px) rotateY(0deg);
 }
+
+.back {
+    background: var(--new-bg-using-color);
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.using_card:hover > .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.using_card:hover > .back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
