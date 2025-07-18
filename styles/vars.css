@@ -1,0 +1,13 @@
+:root {
+    --nav-font: 'Staatliches', sans-serif;
+    --length-font: 'Tourney', sans-serif;
+    --subtitle-font: 'Farro', sans-serif;
+    --title-font: 'Francois One', sans-serif;
+    --text-font: 'PT Sans', sans-serif;
+
+    --black-color: #000000;
+    --bg-color: #0000002f;
+    --gray-bg-color: #E6E6E6;
+    --hover-using-color: #959494;
+    --new-bg-using-color: #1A1A1A;
+}
