@@ -89,6 +89,7 @@ li {
     text-decoration: underline;
     color: var(--hover-color);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .nav__page-item-1::after {
@@ -164,8 +165,11 @@ li {
     color: var(--black-color);
 }
 
-.nav__item:hover {
+.nav__item:hover a {
     color: var(--hover-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
 }
 
 /* article */
@@ -281,7 +285,16 @@ span {
     border-radius: 8px;
 }
 
-.using_card:hover {
-    background: var(--hover-using-color);
-    transition: 0.3s ease-in-out;
+.using_card-color {
+    background: var(--new-bg-using-color);
 }
+
+.using_card img.visible {
+    display: none;
+}
+
+/* .using_card:hover {
+    background: var(--hover-using-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+} */
