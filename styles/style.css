@@ -285,16 +285,9 @@ span {
     border-radius: 8px;
 }
 
-.using_card-color {
-    background: var(--new-bg-using-color);
-}
-
-.using_card img.visible {
-    display: none;
-}
-
-/* .using_card:hover {
+.using_card:hover {
     background: var(--hover-using-color);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-} */
+    transform: rotate3d(1, 1, 1, 30deg);
+}
