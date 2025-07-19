@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    position: relative;
+}
+
 li {
     list-style: none;
 }
@@ -30,7 +34,7 @@ li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 
 .lang_list {
@@ -125,9 +129,9 @@ li {
 }
 
 .bg_picture {
-    position: absolute;
-    top: 0;
-    right: -200px;
+    position: fixed;
+    top: 100px;
+    right: -100px;
     z-index: -1;
 }
 
@@ -141,6 +145,8 @@ li {
     max-width: 385px;
     width: 100%;
     padding: 10px;
+    position: sticky;
+    top: 50px;
 }
 
 .nav__list {
